@@ -20,73 +20,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="loader">
-      <div class="count-wrapper">
-        <div class="count">
-          <div class="digit"><h1>9</h1></div>
-          <div class="digit"><h1>8</h1></div>
-          <div class="digit"><h1>7</h1></div>
-          <div class="digit"><h1>4</h1></div>
-          <div class="digit"><h1>2</h1></div>
-          <div class="digit"><h1>0</h1></div>
-        </div>
-      </div>
-
-      <div class="count-wrapper">
-        <div class="count">
-          <div class="digit"><h1>9</h1></div>
-          <div class="digit"><h1>5</h1></div>
-          <div class="digit"><h1>9</h1></div>
-          <div class="digit"><h1>7</h1></div>
-          <div class="digit"><h1>4</h1></div>
-          <div class="digit"><h1>0</h1></div>
-        </div>
-      </div>
-
-      <div class="revealer revealer-1">
-        <svg
-          width="151"
-          height="148"
-          viewBox="0 0 151 148"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M75.9817 0L77.25 34.2209C78.0259 55.1571 94.8249 71.9475 115.762 72.7127L150.982 74L115.762 75.2873C94.8249 76.0525 78.0259 92.8429 77.25 113.779L75.9817 148L74.7134 113.779C73.9375 92.8429 57.1385 76.0525 36.2019 75.2873L0.981689 74L36.2018 72.7127C57.1384 71.9475 73.9375 55.1571 74.7134 34.2209L75.9817 0Z"
-            fill="white"
-          />
-        </svg>
-      </div>
-      <div class="revealer revealer-2">
-        <svg
-          width="151"
-          height="148"
-          viewBox="0 0 151 148"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M75.9817 0L77.25 34.2209C78.0259 55.1571 94.8249 71.9475 115.762 72.7127L150.982 74L115.762 75.2873C94.8249 76.0525 78.0259 92.8429 77.25 113.779L75.9817 148L74.7134 113.779C73.9375 92.8429 57.1385 76.0525 36.2019 75.2873L0.981689 74L36.2018 72.7127C57.1384 71.9475 73.9375 55.1571 74.7134 34.2209L75.9817 0Z"
-            fill="#121212"
-          />
-        </svg>
-      </div>
-      <div class="revealer revealer-3">
-        <svg
-          width="151"
-          height="148"
-          viewBox="0 0 151 148"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M75.9817 0L77.25 34.2209C78.0259 55.1571 94.8249 71.9475 115.762 72.7127L150.982 74L115.762 75.2873C94.8249 76.0525 78.0259 92.8429 77.25 113.779L75.9817 148L74.7134 113.779C73.9375 92.8429 57.1385 76.0525 36.2019 75.2873L0.981689 74L36.2018 72.7127C57.1384 71.9475 73.9375 55.1571 74.7134 34.2209L75.9817 0Z"
-            fill="white"
-          />
-        </svg>
-      </div>
-    </div> -->
-
     <!-- Header -->
     <header class="header">
       <div class="logo">
@@ -109,11 +42,13 @@
         <div class="home-content">
           <div class="img-container">
             <div class="img-box">
-              <img
-                src="./assets/images/queenshafa.png"
-                draggable="false"
-                alt="My photo gwe"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/mobile-img.png"
+                  media="(max-width: 480px)"
+                />
+                <img src="./assets/images/queenshafa.png" alt="Foto Hero" />
+              </picture>
               <div class="img-text">
                 <h1 class="heading">Queenshafa <br />Rania Bilqis</h1>
               </div>
@@ -122,7 +57,7 @@
 
           <div class="home-description">
             <div>
-              <p>Crafting seamless web &amp; mobile experiences</p>
+              <p>A Curious Student. . .</p>
               <a href="#" class="black-btn">Download CV</a>
             </div>
 
@@ -227,39 +162,43 @@
           <h3>Goalify App</h3>
           <div>
             <p>Flutter, Figma</p>
+            <a href="https://github.com/queenshafa/goalify-app" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="glass-card">
+          <h3>Notes App Backend</h3>
+          <div>
+            <p>JavaScript</p>
             <i class="bx bx-link-external"></i>
           </div>
         </div>
         <div class="glass-card">
-          <h3>Goalify App</h3>
+          <h3>lec.it redesign</h3>
+          <div>
+            <p>Spline, Figma</p>
+            <i class="bx bx-link-external"></i>
+          </div>
+        </div>
+        <div class="glass-card">
+          <h3>Driveway App</h3>
           <div>
             <p>Flutter, Figma</p>
             <i class="bx bx-link-external"></i>
           </div>
         </div>
         <div class="glass-card">
-          <h3>Goalify App</h3>
+          <h3>Portfolio Web UI</h3>
           <div>
-            <p>Flutter, Figma</p>
-            <i class="bx bx-link-external"></i>
-          </div>
-        </div>
-        <div class="glass-card">
-          <h3>Goalify App</h3>
-          <div>
-            <p>Flutter, Figma</p>
-            <i class="bx bx-link-external"></i>
-          </div>
-        </div>
-        <div class="glass-card">
-          <h3>Goalify App</h3>
-          <div>
-            <p>Flutter, Figma</p>
+            <p>Figma</p>
             <i class="bx bx-link-external"></i>
           </div>
         </div>
       </div>
-      <a href="#" class="white-btn">More Works</a>
+      <a href="https://github.com/queenshafa" target="_blank" class="white-btn"
+        >More Works</a
+      >
     </section>
 
     <section class="experiences" id="experiences">
@@ -271,76 +210,80 @@
 
         <ul class="experience-list">
           <li>
-            <span class="project">Project 1</span>
-            <span class="year">2020</span>
+            <span class="project">IDN Magazine Leader</span>
+            <span class="year">Oct 2024 - Nov 2024</span>
           </li>
           <li>
-            <span class="project">Project 2</span>
-            <span class="year">2021</span>
+            <span class="project">Technology Division of ISC</span>
+            <span class="year">Jul 2022 - May 2023</span>
           </li>
           <li>
-            <span class="project">Project 3</span>
-            <span class="year">2022</span>
+            <span class="project">Bronze Medal Award @ ARC Korea 2023</span>
+            <span class="year">Oct 2023</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Silver Medal Award @ KRON 2024</span>
+            <span class="year">Oct 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Sumo 3rd Winner @ RYSC 2024</span>
+            <span class="year">Oct 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project"
+              >Web Development 2nd Winner of ISCOMFEST 2024</span
+            >
+            <span class="year">Sept 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">UJIKOM Leader</span>
+            <span class="year">Jan 2025 - Apr 2025</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project"
+              >Poster Design 1st Runner Up @ AdzFest 2024</span
+            >
+            <span class="year">Oct 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">IDN Magazine Graphic Designer</span>
+            <span class="year">2022 - 2025</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Speaker @ Weekend Tech Talk IDN Akhwat</span>
+            <span class="year">2023, 2025</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Host @ Weekend Tech Talk IDN Akhwat</span>
+            <span class="year">Nov 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Coding Mission Competition @ IYRC 2024</span>
+            <span class="year">May 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Line Follower Competition @ SRC 2024</span>
+            <span class="year">Aug 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Thunkable Hackathon @ Alhazen Academy</span>
+            <span class="year">Aug 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">UI/UX Competition @ Festida 2024</span>
+            <span class="year">Nov 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">English Olympiad @ ASLIC 2024</span>
+            <span class="year">Sept 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Line Follower Competition @ SGD-RC 2024</span>
+            <span class="year">Des 2024</span>
           </li>
           <li>
-            <span class="project">Project 4</span>
-            <span class="year">2023</span>
+            <span class="project">Scratch Competition @ IKCC 2023</span>
+            <span class="year">Sept 2023</span>
           </li>
         </ul>
       </div>
@@ -367,49 +310,7 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
     <!-- JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
+
     <script src="./main.js"></script>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const tl = gsap.timeline({
-          defaults: { ease: "power4.out", duration: 1.5 },
-        });
-
-        // 1. Page fade in
-        tl.from("body", { opacity: 0, duration: 0.8 })
-
-          // 2. Header & Logo
-          .from(".header", { y: -100, opacity: 0, duration: 1 }, "-=0.3")
-          .from(".logo", { opacity: 0, y: 40, duration: 1 }, "-=1")
-          .from(".navbar a", { y: 30, opacity: 0, stagger: 0.1 }, "-=0.8")
-
-          // 3. Hero image & text
-          .from(
-            ".img-box img",
-            { y: 120, opacity: 0, scale: 1.2, duration: 1.2 },
-            "-=0.5",
-          )
-          .from(".img-text h1", { x: -80, opacity: 0, duration: 1 }, "-=0.8")
-
-          // 4. Hero description & button
-          .from(
-            ".home-description p",
-            { y: 40, opacity: 0, duration: 1 },
-            "-=0.6",
-          )
-          .from(
-            ".black-btn",
-            { scale: 0.8, opacity: 0, duration: 0.8 },
-            "-=0.6",
-          )
-
-          // 5. Role list stagger
-          .from(
-            ".role li",
-            { x: 60, opacity: 0, stagger: 0.2, duration: 0.8 },
-            "-=0.5",
-          );
-      });
-    </script> -->
   </body>
 </html>

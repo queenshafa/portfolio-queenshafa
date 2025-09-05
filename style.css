@@ -40,62 +40,6 @@ section {
   padding: 10rem 9% 2rem;
 }
 
-/* Loader */
-
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-  color: var(--text-color);
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-}
-
-.count-wrapper {
-  position: relative;
-  width: 180px;
-  height: 360px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  will-change: transform;
-}
-
-.count {
-  position: relative;
-  width: 1080px;
-  height: 360px;
-  display: flex;
-  transform: translateX(-1080px);
-  will-change: transform;
-}
-
-.digit {
-  position: relative;
-  width: 180px;
-  height: 360px;
-}
-
-.digit h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: max-content;
-  font-size: 360px;
-  font-weight: lighter;
-  line-height: 1;
-}
-
-.revealer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Cursor */
 
 .cursor,
@@ -130,13 +74,6 @@ section {
     height 0.3s;
 }
 
-/* Efek hover ke link / tombol */
-a:hover ~ .cursor-follower,
-button:hover ~ .cursor-follower {
-  transform: translate(-50%, -50%) scale(1.8);
-  border-color: #ff4081; /* warna bisa kamu ganti */
-}
-
 /* Header */
 .header {
   position: fixed;
@@ -154,14 +91,6 @@ button:hover ~ .cursor-follower {
 .header .logo a {
   mix-blend-mode: difference;
 }
-
-/* .header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  z-index: -1;
-} */
 
 .heading {
   font-family: "relationship", serif;
@@ -183,8 +112,7 @@ h1 {
   color: var(--text-color);
   mix-blend-mode: difference;
   position: relative;
-  z-index: 10; /* pastikan di atas konten lain */
-  /* filter: invert(1); */
+  z-index: 10;
 }
 
 .nav-button {
@@ -197,12 +125,7 @@ h1 {
 
 #nav-button {
   display: block;
-  /* transition: opacity 0.3s ease; */
 }
-
-/* #nav-button.fade {
-  opacity: 0;
-} */
 
 .navbar {
   position: absolute;
@@ -316,8 +239,8 @@ h1 {
 .img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* biar tetep isi kotak penuh */
-  object-position: 50% 30%; /* ⬅️ fokus bagian atas (atur sesuai foto) */
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 
 .img-box .img-text {
@@ -356,7 +279,6 @@ h1 {
   font-weight: 600;
   border: 1px solid var(--text-color);
   border-radius: 4rem;
-  /* box-shadow: 0 0 1rem var(--text-color); */
   letter-spacing: 0.1rem;
   transition: 0.3s ease-in-out;
   z-index: 1;
@@ -525,12 +447,6 @@ h1 {
   font-weight: 500;
 }
 
-/* .services-content a {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-} */
-
 /* Projects */
 
 .projects {
@@ -565,9 +481,8 @@ h1 {
   color: var(--bg-color);
 
   display: flex;
-  flex-direction: column; /* supaya konten bisa diatur atas-bawah */
+  flex-direction: column;
 
-  /* Glass + gradient */
   background: linear-gradient(
     135deg,
     rgba(58, 33, 108, 0.25),
@@ -576,10 +491,8 @@ h1 {
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
 
-  /* Border halus kaca */
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  /* Glow */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   transition:
     transform 0.3s ease,
@@ -612,12 +525,16 @@ h1 {
   justify-content: space-between;
   align-items: center;
 
-  background: var(--text-color); /* bisa diganti sesuai tema */
+  background: var(--text-color);
   padding: 1rem 0.8rem;
   width: 100%;
 
-  border-radius: 0 0 1rem 1rem; /* biar nyatu sama card */
-  margin-top: auto; /* dorong ke bawah */
+  border-radius: 0 0 1rem 1rem;
+  margin-top: auto;
+}
+
+.glass-card a {
+  color: var(--bg-color);
 }
 
 .white-btn {
@@ -798,32 +715,128 @@ h1 {
   html {
     font-size: 55%;
   }
+  section {
+    padding: 10rem 15%;
+  }
+  .heading {
+    font-size: 10rem;
+  }
+  .navbar {
+    width: 30%;
+    left: 61%;
+  }
+  .navbar a {
+    font-size: 2rem;
+  }
+  .img-container {
+    padding-top: 15rem;
+  }
+  .img-box img {
+    height: 40rem;
+    object-fit: cover;
+    object-position: 65% 30%;
+  }
+  .skills h3 {
+    font-size: 4rem;
+    color: var(--text-color);
+    margin: 2.5rem;
+  }
+  .project {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  .glass-card {
+    width: 90%;
+    max-width: 42rem;
+  }
 }
 
 @media (max-width: 617px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
+  }
+  section {
+    padding: 8rem 15%;
+  }
+  .img-container {
+    padding-top: 18rem;
+  }
+  .img-box img {
+    height: 50rem;
+    width: 80rem;
+    object-fit: cover;
+    object-position: 95% 30%;
+  }
+  .img-box .img-text {
+    top: 30%;
+    right: 20%;
+    margin-left: 2rem;
+  }
+  .social-media a {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .skills h3 {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin: 4rem 2rem;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 45%;
   }
-  .home-content {
-    flex-direction: column;
+  section {
+    padding: 8rem 5%;
+  }
+  .navbar {
+    width: 50%;
+    left: 41%;
+  }
+  .navbar a {
+    font-size: 2rem;
+  }
+  .img-box .img-text {
+    top: -25%;
+    right: 25%;
+    margin-left: 0.5rem;
     text-align: center;
   }
 
-  .img-container {
-    order: 2; /* pindahin foto ke bawah */
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .img-box .img-text h1 {
+    font-size: 14.5rem;
+    mix-blend-mode: difference;
   }
 
-  .img-container img {
-    width: 80%; /* biar proporsional di hp */
+  .img-container {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+  }
+
+  .img-box picture,
+  .img-box img {
+    display: block;
+    width: 99%;
+    height: auto;
     object-fit: cover;
+    border-radius: 1.5rem;
+  }
+  .skills h2 {
+    padding-top: 14rem;
+  }
+  .skills h3 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin: 5rem 1.5rem;
   }
 }
